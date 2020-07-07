@@ -6,12 +6,12 @@
 
 ## Usage
 
-First of all you need to install Mapbox GL and vue-mapbox. [See vue-mapbox doc](https://soal.github.io/vue-mapbox/#/quickstart)
+First of all you need to install Mapbox GL and v-mapbox. [See v-mapbox doc](https://v-mapbox.netlify.app)
 
 
 ```bash
-# Install mabbox-gl-geocoder and vue-mapbox-geocoder:
-$ npm i @mapbox/mapbox-gl-geocoder vue-mapbox @geospoc/v-mapbox-geocoder
+# Install mapbox-gl-geocoder v-mapbox and v-mapbox-geocoder:
+$ npm i @mapbox/mapbox-gl-geocoder v-mapbox @geospoc/v-mapbox-geocoder
 ```
 
 Now you can add geocoder control like other controls:
@@ -33,7 +33,7 @@ Now you can add geocoder control like other controls:
 </template>
 
 <script>
-  import { MglMap } from 'vue-mapbox';
+  import { MglMap } from 'v-mapbox';
   import MglGeocoderControl from '@geospoc/v-mapbox-geocoder';
   // you can also import this in your main.js or nuxt.config.js
   // or even main/global (s)css file
