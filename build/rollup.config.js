@@ -19,7 +19,7 @@ export default [
       commonjs(),
       vue(),
     ],
-    external: ['@mapbox/mapbox-gl-geocoder', 'vue-mapbox'],
+    external: ['@mapbox/mapbox-gl-geocoder', 'v-mapbox'],
   },
   // CommonJS build
   {
@@ -37,7 +37,7 @@ export default [
       commonjs(),
       vue(),
     ],
-    external: ['@mapbox/mapbox-gl-geocoder', 'vue-mapbox'],
+    external: ['@mapbox/mapbox-gl-geocoder', 'v-mapbox'],
   },
   // UMD build.
   {
@@ -48,7 +48,7 @@ export default [
       file: 'dist/v-mapbox-geocoder.js',
       globals: {
         '@mapbox/mapbox-gl-geocoder': 'MapboxGeocoder',
-        'vue-mapbox': 'vueMapbox',
+        'v-mapbox': 'vMapbox',
       },
     },
     plugins: [
@@ -59,6 +59,6 @@ export default [
       commonjs(),
       vue(),
     ],
-    external: ['@mapbox/mapbox-gl-geocoder', 'vue-mapbox'],
+    external: ['@mapbox/mapbox-gl-geocoder', 'v-mapbox'],
   },
 ];

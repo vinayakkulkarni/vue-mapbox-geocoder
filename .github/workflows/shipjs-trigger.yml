@@ -2,7 +2,7 @@ name: Ship js trigger
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   build:
     name: Release
@@ -10,18 +10,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: master
-          
+          ref: main
       - uses: actions/setup-node@v1
         with:
           registry-url: "https://npm.pkg.github.com"
-      - run: |
-          if [ -f "yarn.lock" ]; then
-            yarn install
-          else
-            npm install
-          fi
-      
+          scope: '@geospoc'
+      - run: npm install
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.READ_PACKAGES_PAT }}
       - run: npm run release:trigger
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
