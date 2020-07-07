@@ -1,3 +1,18 @@
+## [0.2.1](https://github.com/geospoc/v-mapbox-geocoder/compare/v0.2.0...v0.2.1) (2020-07-07)
+
+
+### Bug Fixes
+
+* update docs ([ace57a0](https://github.com/geospoc/v-mapbox-geocoder/commit/ace57a0d582288e826cee6c9cc9867ddb8b27b51))
+
+
+### Features
+
+* pass all options to geocoder using $attrs ([d00a048](https://github.com/geospoc/v-mapbox-geocoder/commit/d00a04863e9e6f9f9863643a37a7ddaa795b6c46))
+* update npm scripts ([299678e](https://github.com/geospoc/v-mapbox-geocoder/commit/299678ed51a55f082ec2f796921e9da429952ae6))
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](https://github.com/geospoc/v-mapbox-geocoder/compare/v0.1.1...v0.2.0) (2020-05-20)
 
