@@ -11,7 +11,7 @@ export default {
     file: 'dist/v-mapbox-geocoder.min.js',
     globals: {
       '@mapbox/mapbox-gl-geocoder': 'MapboxGeocoder',
-      'vue-mapbox': 'vueMapbox',
+      'v-mapbox': 'vMapbox',
     },
   },
   plugins: [
@@ -23,5 +23,5 @@ export default {
     terser(),
     vue(),
   ],
-  external: ['@mapbox/mapbox-gl-geocoder', 'vue-mapbox'],
+  external: ['@mapbox/mapbox-gl-geocoder', 'v-mapbox'],
 };

@@ -1,5 +1,5 @@
 import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
-import { $helpers } from 'vue-mapbox';
+import { $helpers } from 'v-mapbox';
 
 const geocoderEvents = {
   clear: 'clear',
