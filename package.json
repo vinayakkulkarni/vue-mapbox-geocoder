@@ -52,7 +52,7 @@
     "@commitlint/cli": "^9.0.1",
     "@commitlint/config-conventional": "^9.0.1",
     "@rollup/plugin-commonjs": "^13.0.0",
-    "ava": "^3.10.0",
+    "ava": "^3.10.1",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-module-resolver": "^4.0.0",
