@@ -24,6 +24,7 @@ Now you can add geocoder control like other controls:
     <MglGeocoderControl
       :accessToken="accessToken"
       :input.sync="defaultInput"
+      :mapboxgl="mapbox"
       container="geocoder_container_id"
       position="top-left"
       @results="handleSearch"
@@ -32,6 +33,7 @@ Now you can add geocoder control like other controls:
 </template>
 
 <script>
+  import mapboxgl from 'mapbox-gl';
   import { MglMap } from 'v-mapbox';
   import MglGeocoderControl from '@geospoc/v-mapbox-geocoder';
   // you can also import this in your main.js or nuxt.config.js
@@ -48,7 +50,8 @@ Now you can add geocoder control like other controls:
       return {
         accessToken: 'YOUR_ACCESS_TOKEN',
         mapStyle: 'YOUR_MAP_STYLE',
-        defaultInput: 'Bodhgaya'
+        defaultInput: 'Bodhgaya',
+        mapbox: mapboxgl,
       }
     },
     methods: {
