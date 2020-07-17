@@ -40,6 +40,7 @@ export default {
     },
     mapboxgl: {
       type: Object,
+      required: true,
       default: null,
     },
   },
@@ -76,6 +77,7 @@ export default {
       ...this.$attrs,
       proximity: this.proximity,
       accessToken: this.accessToken,
+      mapboxgl: this.mapboxgl,
     });
 
     this.control.on('results', this.$_updateInput);
