@@ -1,3 +1,12 @@
+## [0.2.3](https://github.com/geospoc/v-mapbox-geocoder/compare/v0.2.2...v0.2.3) (2020-07-17)
+
+
+### Bug Fixes
+
+* use injected mapbox or props mapbox-gl object ([0ff46f0](https://github.com/geospoc/v-mapbox-geocoder/commit/0ff46f0d3f2abe6b87207405834dddf16e64df6f))
+
+
+
 ## [0.2.2](https://github.com/geospoc/v-mapbox-geocoder/compare/v0.2.1...v0.2.2) (2020-07-17)
 
 
