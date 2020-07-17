@@ -40,7 +40,6 @@ export default {
     },
     mapboxgl: {
       type: Object,
-      required: true,
       default: null,
     },
   },
@@ -68,16 +67,19 @@ export default {
   },
 
   created() {
+    let mapboxgl = this.mapbox;
     this.control = null;
     if (this.accessToken && !this.mapbox.accessToken) {
       this.mapbox.accessToken = this.accessToken;
     }
-
+    if (this.mapboxgl) {
+      mapboxgl = this.mapboxgl;
+    }
     this.control = new MapboxGeocoder({
       ...this.$attrs,
       proximity: this.proximity,
       accessToken: this.accessToken,
-      mapboxgl: this.mapboxgl,
+      mapboxgl,
     });
 
     this.control.on('results', this.$_updateInput);
