@@ -1,3 +1,12 @@
+## [0.2.2](https://github.com/geospoc/v-mapbox-geocoder/compare/v0.2.1...v0.2.2) (2020-07-17)
+
+
+### Bug Fixes
+
+* update source 🛠 ([63b0d9d](https://github.com/geospoc/v-mapbox-geocoder/commit/63b0d9dd7c4c0926cf33e91317bcf82fd2917a1a))
+
+
+
 ## [0.2.1](https://github.com/geospoc/v-mapbox-geocoder/compare/v0.2.0...v0.2.1) (2020-07-07)
 
 
