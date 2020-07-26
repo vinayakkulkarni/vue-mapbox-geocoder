@@ -286,15 +286,15 @@ export default {
   watch: {
     input: {
       handler(next, prev) {
-        if (this.control && next !== prev) {
-          this.control.setInput(next);
+        if (this.geocoder && next !== prev) {
+          this.geocoder.setInput(next);
         }
       },
       immediate: true,
     },
     proximity(next, prev) {
-      if (this.control && next !== prev) {
-        this.control.setProximity(next);
+      if (this.geocoder && next !== prev) {
+        this.geocoder.setProximity(next);
       }
     },
   },
@@ -343,31 +343,32 @@ export default {
   },
 
   beforeDestroy() {
-    this.control.off('results', this.$_updateInput);
+    this.geocoder.off('results', this.$_updateInput);
   },
 
   methods: {
     $_deferredMount() {
-      if (this.container !== null) {
+      const t = this;
+      if (t.container !== null) {
         document
-          .getElementById(this.container)
-          .appendChild(this.control.onAdd(this.map));
+          .getElementById(t.container)
+          .appendChild(t.control.onAdd(t.map));
       } else {
-        this.map.addControl(this.control, this.position);
+        t.map.addControl(t.geocoder, t.position);
       }
-      if (this.input) {
-        this.control.setInput(this.input);
+      if (t.input) {
+        t.geocoder.setInput(t.input);
       }
-      this.$_emitEvent('added', { geocoder: this.control });
-      this.$_bindSelfEvents(Object.keys(geocoderEvents));
-      this.initial = false;
+      t.$_emitEvent('added', { geocoder: t.geocoder });
+      t.$_bindSelfEvents(Object.keys(geocoderEvents));
+      t.initial = false;
     },
 
     $_bindSelfEvents(events) {
-      const vm = this;
-      Object.keys(this.$listeners).forEach((eventName) => {
+      const t = this;
+      Object.keys(t.$listeners).forEach((eventName) => {
         if (events.includes(eventName)) {
-          this.control.on(eventName, vm.$_emitControlEvent.bind(vm, eventName));
+          t.geocoder.on(eventName, t.$_emitControlEvent.bind(t, eventName));
         }
       });
     },
@@ -377,16 +378,18 @@ export default {
     },
 
     $_updateInput(results) {
-      if (!this.initial) {
+      const t = this;
+      if (!t.initial) {
         const input = results.query ? results.query.join(' ') : ' ';
-        this.$emit('update:input', input);
+        t.$emit('update:input', input);
       }
     },
 
     query(query) {
-      if (this.control) {
-        this.$emit('update:input', query);
-        return this.control.query(query);
+      const t = this;
+      if (t.geocoder) {
+        t.$emit('update:input', query);
+        return t.geocoder.query(query);
       }
       return null;
     },
