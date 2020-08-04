@@ -7,7 +7,7 @@
     "url": "git@github.com:geospoc/v-mapbox-geocoder.git"
   },
   "author": {
-    "name": "GeoSpoc",
+    "name": "GeoSpoc Dev Team",
     "email": "developers@geospoc.com",
     "url": "https://geospoc.com"
   },
@@ -19,10 +19,12 @@
     }
   ],
   "publishConfig": {
+    "access": "public",
     "registry": "https://npm.pkg.github.com"
   },
   "license": "MIT",
   "private": false,
+  "sideEffects": false,
   "main": "dist/v-mapbox-geocoder.cjs.js",
   "module": "dist/v-mapbox-geocoder.esm.js",
   "unpkg": "dist/v-mapbox-geocoder.js",
@@ -41,21 +43,25 @@
     "lint:eslint:fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "lint:prettier": "prettier --check \"{,!(node_modules|dist)/**/}*.{js,vue}\" --ignore-path .gitignore",
     "lint:prettier:fix": "prettier --write \"{,!(node_modules|dist)/**/}*.{js,vue}\" --ignore-path .gitignore",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
     "release:prepare": "shipjs prepare",
     "release:trigger": "shipjs trigger"
   },
   "peerDependencies": {
-    "mapbox-gl": "^1.11.0",
-    "v-mapbox": "^1.3.2",
-    "@mapbox/mapbox-gl-geocoder": "^4.5.1"
+    "mapbox-gl": "^1.11.1",
+    "v-mapbox": "^1.3.3",
+    "@mapbox/mapbox-gl-geocoder": "^4.6.0"
   },
   "devDependencies": {
     "@ava/babel": "^1.0.1",
     "@babel/core": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
-    "@commitlint/cli": "^9.1.1",
+    "@commitlint/cli": "^9.1.2",
     "@commitlint/config-conventional": "^9.1.1",
     "@geospoc/prettier-config-standard": "^1.0.0",
+    "@mapbox/mapbox-gl-geocoder": "^4.6.0",
+    "@rollup/plugin-babel": "^5.1.0",
     "@rollup/plugin-commonjs": "^14.0.0",
     "ava": "^3.11.1",
     "babel-eslint": "^10.1.0",
@@ -70,12 +76,13 @@
     "husky": "^4.2.5",
     "prettier": "^2.0.5",
     "rollup": "^2.23.0",
-    "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-terser": "^6.1.0",
     "rollup-plugin-vue": "^5.1.9",
     "shipjs": "^0.20.1",
+    "v-mapbox": "^1.3.3",
     "vue": "^2.6.11",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "vuepress": "^1.5.2"
   },
   "keywords": [
     "vue",
@@ -86,10 +93,10 @@
     "mapbox-gl-geocoder"
   ],
   "engines": {
-    "node": ">=10.20.0"
+    "node": ">=12.18.3"
   },
   "bugs": {
     "url": "https://github.com/geospoc/v-mapbox-geocoder/issues"
   },
-  "homepage": "https://github.com/geospoc/v-mapbox-geocoder#readme"
+  "homepage": "https://v-mapbox.geospoc.io/"
 }
