@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: npm install
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.READ_PACKAGES_PAT }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Release pkg to registry
         run: npm run release:trigger
