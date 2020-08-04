@@ -1,3 +1,24 @@
+# [0.3.0](https://github.com/geospoc/v-mapbox-geocoder/compare/v0.2.3...v0.3.0) (2020-08-04)
+
+
+### Bug Fixes
+
+* update lineending 😬 ([9d0c9cd](https://github.com/geospoc/v-mapbox-geocoder/commit/9d0c9cdf1665e3a9e0cbed39f3ccd9fc75505693))
+* update npmrc ([c97032e](https://github.com/geospoc/v-mapbox-geocoder/commit/c97032ebc2894c42a4c9a1fb962e21d4d960de7c))
+* **ci:** add name to steps ([80772c1](https://github.com/geospoc/v-mapbox-geocoder/commit/80772c10983c2fea23cd7431df99c25089076a59))
+* **ci:** use GITHUB_TOKEN instead ([9369ad1](https://github.com/geospoc/v-mapbox-geocoder/commit/9369ad1749ae6420a2cad5d8573f272fa606ab6d))
+* **rollup:** update rollup plugin babel ([1a8c945](https://github.com/geospoc/v-mapbox-geocoder/commit/1a8c945f8d83cd8eae3dceb28177e6327352903d))
+* rename `control` to `geocoder` ([cc01743](https://github.com/geospoc/v-mapbox-geocoder/commit/cc017430ee8a1a5df0873466041914582837816b))
+
+
+### Features
+
+* **netlify:** add netlify config file ([710303f](https://github.com/geospoc/v-mapbox-geocoder/commit/710303f39237924d37d35c27cde122dc8a1d43f6))
+* add `.npmrc` for `[@geospoc](https://github.com/geospoc)` scoped pkgs ([c73e51e](https://github.com/geospoc/v-mapbox-geocoder/commit/c73e51e799738ad84af6cc84e996267f16f1c682))
+* add geocoder options in props ([938f44a](https://github.com/geospoc/v-mapbox-geocoder/commit/938f44af24d092f8f8d35901e9d68c86eb6bec67))
+
+
+
 ## [0.2.3](https://github.com/geospoc/v-mapbox-geocoder/compare/v0.2.2...v0.2.3) (2020-07-17)
 
 
