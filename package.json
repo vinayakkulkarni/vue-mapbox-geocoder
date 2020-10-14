@@ -83,7 +83,7 @@
     "v-mapbox": "^1.6.1",
     "vue": "^2.6.12",
     "vue-template-compiler": "^2.6.12",
-    "vuepress": "^1.6.0"
+    "vuepress": "^1.7.0"
   },
   "resolutions": {
     "serialize-javascript": "^4.0.0"
