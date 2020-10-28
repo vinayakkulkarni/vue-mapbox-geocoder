@@ -1,6 +1,9 @@
 import babel from '@rollup/plugin-babel';
+import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import vue from 'rollup-plugin-vue';
+
+const extensions = ['.js', '.vue'];
 
 export default [
   // ESM build to be used with webpack/rollup.
@@ -13,8 +16,10 @@ export default [
     },
     plugins: [
       babel({
+        babelHelpers: 'bundled',
         exclude: 'node_modules/**',
       }),
+      resolve({ extensions, browser: true }),
       commonjs(),
       vue(),
     ],
@@ -30,8 +35,10 @@ export default [
     },
     plugins: [
       babel({
+        babelHelpers: 'bundled',
         exclude: 'node_modules/**',
       }),
+      resolve({ extensions, browser: true }),
       commonjs(),
       vue(),
     ],
@@ -51,8 +58,10 @@ export default [
     },
     plugins: [
       babel({
+        babelHelpers: 'bundled',
         exclude: 'node_modules/**',
       }),
+      resolve({ extensions, browser: true }),
       commonjs(),
       vue(),
     ],

@@ -1,4 +1,5 @@
 import babel from '@rollup/plugin-babel';
+import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import { terser } from 'rollup-plugin-terser';
 import vue from 'rollup-plugin-vue';
@@ -16,8 +17,10 @@ export default {
   },
   plugins: [
     babel({
+      babelHelpers: 'bundled',
       exclude: 'node_modules/**',
     }),
+    resolve({ extensions: ['.js', '.vue'], browser: true }),
     commonjs(),
     terser(),
     vue(),
