@@ -45,9 +45,7 @@
     "lint:prettier:fix": "prettier --write \"{,!(node_modules|dist)/**/}*.{js,vue}\" --ignore-path .gitignore",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "release:prepare": "shipjs prepare",
-    "release:trigger": "shipjs trigger",
-    "preinstall": "npx npm-force-resolutions"
+    "release": "shipjs prepare"
   },
   "peerDependencies": {
     "mapbox-gl": "^1.12.0",
@@ -85,9 +83,6 @@
     "vue": "^2.6.12",
     "vue-template-compiler": "^2.6.12",
     "vuepress": "^1.7.1"
-  },
-  "resolutions": {
-    "serialize-javascript": "^4.0.0"
   },
   "keywords": [
     "vue",
