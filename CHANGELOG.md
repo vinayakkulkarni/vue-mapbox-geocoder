@@ -1,3 +1,17 @@
+## [0.3.1](https://github.com/geospoc/v-mapbox-geocoder/compare/v0.3.0...v0.3.1) (2020-10-28)
+
+
+### Bug Fixes
+
+* remove preinstall script ([6bcb704](https://github.com/geospoc/v-mapbox-geocoder/commit/6bcb704568279ec3a3c5b5d27c15988e6e978138))
+* rollup plugin node resolver added ([6c2285f](https://github.com/geospoc/v-mapbox-geocoder/commit/6c2285fad2200a824e69ebb1d4f276fbcbf865f4))
+* update NPM_AUTH_TOKEN ([9bc8a78](https://github.com/geospoc/v-mapbox-geocoder/commit/9bc8a78a296a0379a47f6758fc6a4c066357d282))
+* **deps:** commitlint upgraded to mitigate vuln ([46201f6](https://github.com/geospoc/v-mapbox-geocoder/commit/46201f615221799eb1236d24d36c23d5d68dc13f))
+* **shipjs:** update NPM_AUTH_TOKEN ([76afec2](https://github.com/geospoc/v-mapbox-geocoder/commit/76afec25d1653a7933283d894db08d3e9d9553f6))
+* **vuln:** resolved issue of `serialize-js` ([7460db2](https://github.com/geospoc/v-mapbox-geocoder/commit/7460db26b8893cac6f1cbe05ebc0fead6fc34cee))
+
+
+
 # [0.3.0](https://github.com/geospoc/v-mapbox-geocoder/compare/v0.2.3...v0.3.0) (2020-08-04)
 
 
