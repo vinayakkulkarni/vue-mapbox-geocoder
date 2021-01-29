@@ -1,3 +1,22 @@
+## [0.3.1](https://github.com/geospoc/v-mapbox-geocoder/compare/v0.3.0...v0.3.1) (2021-01-29)
+
+
+### Bug Fixes
+
+* downgrade rollup-plugin-vue for Vue 2 pkgs ([5afc560](https://github.com/geospoc/v-mapbox-geocoder/commit/5afc56028b40ca559a8f13694ce792cf5abfece9))
+* remove preinstall script ([6bcb704](https://github.com/geospoc/v-mapbox-geocoder/commit/6bcb704568279ec3a3c5b5d27c15988e6e978138))
+* rollup plugin node resolver added ([6c2285f](https://github.com/geospoc/v-mapbox-geocoder/commit/6c2285fad2200a824e69ebb1d4f276fbcbf865f4))
+* update NPM_AUTH_TOKEN ([9bc8a78](https://github.com/geospoc/v-mapbox-geocoder/commit/9bc8a78a296a0379a47f6758fc6a4c066357d282))
+* update ship.js trigger ([6a325bd](https://github.com/geospoc/v-mapbox-geocoder/commit/6a325bd6277b05843829bad233e763857d2671e1))
+* update ship.js trigger to ensure `NODE_AUTH_TOKEN` is sent for npm publish ([11c27a9](https://github.com/geospoc/v-mapbox-geocoder/commit/11c27a9f306951d650a6e321310f646ff3a9cf99))
+* **deps:** bump actions/setup-node from v2.1.2 to v2.1.3 ([4c616e8](https://github.com/geospoc/v-mapbox-geocoder/commit/4c616e85bac750304cee0e78049c40cc50f13980))
+* **deps:** bump actions/setup-node from v2.1.3 to v2.1.4 ([c7eb122](https://github.com/geospoc/v-mapbox-geocoder/commit/c7eb122e81417c86a99d73da1f0b3c6f8771874e))
+* **deps:** commitlint upgraded to mitigate vuln ([46201f6](https://github.com/geospoc/v-mapbox-geocoder/commit/46201f615221799eb1236d24d36c23d5d68dc13f))
+* **shipjs:** update NPM_AUTH_TOKEN ([76afec2](https://github.com/geospoc/v-mapbox-geocoder/commit/76afec25d1653a7933283d894db08d3e9d9553f6))
+* **vuln:** resolved issue of `serialize-js` ([7460db2](https://github.com/geospoc/v-mapbox-geocoder/commit/7460db26b8893cac6f1cbe05ebc0fead6fc34cee))
+
+
+
 # [0.3.0](https://github.com/geospoc/v-mapbox-geocoder/compare/v0.2.3...v0.3.0) (2020-08-04)
 
 
