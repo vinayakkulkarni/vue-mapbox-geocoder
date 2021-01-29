@@ -1,6 +1,6 @@
 {
   "name": "@geospoc/v-mapbox-geocoder",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Geocoder plugin for VMapbox",
   "repository": {
     "type": "git",
