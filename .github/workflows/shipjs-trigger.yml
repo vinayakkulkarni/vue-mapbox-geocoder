@@ -9,27 +9,28 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.pull_request.merged == true && startsWith(github.head_ref, 'releases/v')
     steps:
-      - name: Checkout code 🛎
+      - name: Checkout 🛎️
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
           ref: main
 
-      - name: Setup node env 🏗
+      - name: Setup node env 📦
         uses: actions/setup-node@v2.1.4
         with:
           node-version: 14
-          registry-url: 'https://npm.pkg.github.com'
+          registry-url: https://npm.pkg.github.com/
           scope: '@geospoc'
       
-      - name: Install dependencies 👨🏻‍💻
-        run: npm ci
+      - name: Install dependencies 🛠
+        run: npm install
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Release pkg to registry
+      - name: Trigger a new release 🤖
         run: npx shipjs trigger
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+          NPM_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SLACK_INCOMING_HOOK: ${{ secrets.SLACK_INCOMING_HOOK }}
