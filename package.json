@@ -82,7 +82,7 @@
     "v-mapbox": "^1.7.0",
     "vue": "^2.6.12",
     "vue-template-compiler": "^2.6.12",
-    "vuepress": "^1.8.0"
+    "vuepress": "^1.8.1"
   },
   "keywords": [
     "vue",
