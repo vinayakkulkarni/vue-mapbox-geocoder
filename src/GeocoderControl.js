@@ -180,7 +180,7 @@ export default {
      */
     filter: {
       type: Function,
-      default: '',
+      default: null,
       required: false,
     },
     /**
