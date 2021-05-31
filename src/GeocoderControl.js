@@ -189,7 +189,7 @@ export default {
      */
     localGeocoder: {
       type: Function,
-      default: '',
+      default: null,
       required: false,
     },
     /**
