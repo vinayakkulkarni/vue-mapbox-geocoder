@@ -80,8 +80,8 @@
     "rollup-plugin-vue": "^5.1.9",
     "shipjs": "^0.23.2",
     "v-mapbox": "^1.7.1",
-    "vue": "^2.6.12",
-    "vue-template-compiler": "^2.6.12",
+    "vue": "^2.6.13",
+    "vue-template-compiler": "^2.6.13",
     "vuepress": "^1.8.2"
   },
   "keywords": [
