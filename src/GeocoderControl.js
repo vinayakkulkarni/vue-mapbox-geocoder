@@ -180,7 +180,7 @@ export default {
      */
     filter: {
       type: Function,
-      default: '',
+      default: null,
       required: false,
     },
     /**
@@ -189,7 +189,7 @@ export default {
      */
     localGeocoder: {
       type: Function,
-      default: '',
+      default: null,
       required: false,
     },
     /**
@@ -234,7 +234,7 @@ export default {
      */
     render: {
       type: Function,
-      default: '',
+      default: null,
       required: false,
     },
     /**
